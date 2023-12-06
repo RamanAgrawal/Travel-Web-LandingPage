@@ -11,7 +11,7 @@ interface ButtonI {
     | "btn_green"
     | "btn_white_text";
   icon?: string;
-  onClick:()=>void;
+  onClick?:()=>void;
 }
 const Button = ({ title, type, icon, variant,onClick }: ButtonI) => {
   return (
