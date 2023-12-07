@@ -21,7 +21,7 @@ const CampSite = ({
   `}
     >
       <div className="flex flex-col h-full w-full items-start justify-between p-6 lg:px-20 lg:py-10">
-        <div className="border-2 border-red-700 flexCenter gap-4">
+        <div className="flexCenter gap-4">
           <div className="rounded-full p-4 bg-green-50">
             <Image alt="map" src="/folded-map.svg" height={28} width={28} />
           </div>
