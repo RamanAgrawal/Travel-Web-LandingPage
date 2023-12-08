@@ -54,7 +54,12 @@ const Navbar = () => {
             title="Login"
           />
         </div>
-        <div onClick={() => setactive(true)}>
+        <div
+          onClick={() => {
+            alert("ha bhi");
+            setactive(true);
+          }}
+        >
           <Image
             src={"/menu.svg"}
             alt="menu"
