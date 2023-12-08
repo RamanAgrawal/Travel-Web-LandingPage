@@ -58,7 +58,7 @@ const Hero = () => {
           <div className="flex flex-col">
             <div className="flexBetween">
               <p className="regulat-16 text-gray-20">Location</p>
-              <Image src="/close.svg" alt="close" height={24} width={24} />
+              <Image src="/close.svg" alt="close" height={24} width={24} className="cursor-pointer" />
             </div>
             <p className="blod-20 text-white">Kuch bhi</p>
             <div className="flexBetween">
