@@ -7,7 +7,7 @@ import React, { useEffect, useState } from "react";
 import Button from "./Button";
 
 const Navbar = () => {
-  const [active, setactive] = useState<boolean>(true);
+  const [active, setactive] = useState<boolean>(false);
   const [isColored, setisColored] = useState<boolean>(false);
   const handleScroll = () => {
     if (window.scrollY >= 80) {
@@ -56,7 +56,6 @@ const Navbar = () => {
         </div>
         <div
           onClick={() => {
-            alert("ha bhi");
             setactive(true);
           }}
         >
@@ -70,8 +69,8 @@ const Navbar = () => {
         </div>
       </nav>
       <div
-        className={`transition-all fixed z-50 flex flex-col gap-5 p-20 pb-24 left-0 right-0 top-0 h-[50vh] w-full bg-green-90 delay-100 translate-y-[-100%] ${
-          active && "translate-y-0"
+        className={`transition-all fixed z-50 flex flex-col gap-5 p-20 pb-24 left-0 right-0 top-0 h-[50vh] w-full bg-green-90 delay-100 ${
+          active ? "translate-y-0" : "translate-y-[-100%]"
         }`}
       >
         <Image
