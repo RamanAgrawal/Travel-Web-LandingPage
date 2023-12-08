@@ -7,7 +7,7 @@ import React, { useEffect, useState } from "react";
 import Button from "./Button";
 
 const Navbar = () => {
-  const [active, setactive] = useState<boolean>(false);
+  const [active, setactive] = useState<boolean>(true);
   const [isColored, setisColored] = useState<boolean>(false);
   const handleScroll = () => {
     if (window.scrollY >= 80) {
