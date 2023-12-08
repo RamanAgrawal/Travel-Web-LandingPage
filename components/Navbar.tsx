@@ -1,4 +1,4 @@
-"use client"
+"use client";
 
 import { NAV_LINKS } from "@/constants";
 import Image from "next/image";
@@ -19,14 +19,18 @@ const Navbar = () => {
 
   // Use the effect to attach and detach the scroll event listener
   useEffect(() => {
-    window.addEventListener('scroll', handleScroll);
+    window.addEventListener("scroll", handleScroll);
     return () => {
-      window.removeEventListener('scroll', handleScroll);
+      window.removeEventListener("scroll", handleScroll);
     };
   }, []);
   return (
     <>
-      <nav className={`flexBetween padding-container max-container fixed z-30 py-5 w-full transition-all delay-400 ${isColored&&'bg-gray-200'}`}>
+      <nav
+        className={`flexBetween padding-container max-container fixed z-30 py-5 w-full transition-all delay-400 ${
+          isColored && "bg-gray-200"
+        }`}
+      >
         <Link href={"/"}>
           <Image src={"/hilink-logo.svg"} alt="logo" width={74} height={29} />
         </Link>
@@ -50,14 +54,15 @@ const Navbar = () => {
             title="Login"
           />
         </div>
-        <Image
-          onClick={() => setactive(true)}
-          src={"/menu.svg"}
-          alt="menu"
-          height={32}
-          width={32}
-          className="inline-block cursor-pointer lg:hidden"
-        />
+        <div onClick={() => setactive(true)}>
+          <Image
+            src={"/menu.svg"}
+            alt="menu"
+            height={32}
+            width={32}
+            className="inline-block cursor-pointer lg:hidden"
+          />
+        </div>
       </nav>
       <div
         className={`transition-all fixed z-50 flex flex-col gap-5 p-20 pb-24 left-0 right-0 top-0 h-[50vh] w-full bg-green-90 delay-100 translate-y-[-100%] ${
@@ -73,16 +78,16 @@ const Navbar = () => {
           className="absolute top-[32px] right-5 cursor-pointer"
         />
         <ul>
-        {NAV_LINKS.map((link) => (
-          <Link
-          onClick={()=>setactive(false)}
-            key={link.key}
-            href={link.href}
-            className="regular-16 text-white cursor-pointer flexCenter pb-1.5 transition-all hover:font-bold p-3"
-          >
-            {link.label}
-          </Link>
-        ))}
+          {NAV_LINKS.map((link) => (
+            <Link
+              onClick={() => setactive(false)}
+              key={link.key}
+              href={link.href}
+              className="regular-16 text-white cursor-pointer flexCenter pb-1.5 transition-all hover:font-bold p-3"
+            >
+              {link.label}
+            </Link>
+          ))}
         </ul>
       </div>
     </>
