@@ -16,7 +16,7 @@ const Hero = () => {
           className="absolute left-[-5px] top-[-30px] w-10 lg:w-[50px]"
         />
 
-        <h1 className="text-5xl bold-52 lg:bold-88">Adrak Lasjabfds</h1>
+        <h1 className="text-5xl bold-52 lg:bold-88">Than Khamharia Camp Area</h1>
         <p className="regular-16 mt-16 text-gray-30 xl:max-w[520px]">
           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem,
           officia.
