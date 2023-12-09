@@ -59,7 +59,7 @@ const Footer = () => {
           </div>
         </div>
         <div className="border bg-gray-20"/>
-        <p className="regular-14 text-center w-full text-gray-30">ha mai hi bnaya hu </p>
+        <p className="regular-14 text-center w-full text-gray-30">All right Reserved</p>
       </div>
     </footer>
   );

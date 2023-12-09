@@ -63,11 +63,11 @@ const Hero = () => {
             <p className="blod-20 text-white">Kuch bhi</p>
             <div className="flexBetween">
               <div className="flex flex-col">
-                <p className="regulat-16 text-gray-20 block">distence</p>
+                <p className="regulat-16 text-gray-20 block">distance</p>
                 <p className="blod-20 text-white">1425</p>
               </div>
               <div className="flex flex-col">
-                <p className="regulat-16 text-gray-20 block">distence</p>
+                <p className="regulat-16 text-gray-20 block">distance</p>
                 <p className="blod-20 text-white">1425</p>
               </div>
             </div>
