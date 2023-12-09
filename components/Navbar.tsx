@@ -27,8 +27,8 @@ const Navbar = () => {
   return (
     <>
       <nav
-        className={`flexBetween padding-container max-container fixed z-30 py-5 w-full transition-all delay-400 ${
-          isColored && "bg-gray-200"
+        className={`flexBetween padding-container fixed z-30 py-5 w-full transition-all delay-400 ${
+          isColored && "bg-gray-100"
         }`}
       >
         <Link href={"/"}>
