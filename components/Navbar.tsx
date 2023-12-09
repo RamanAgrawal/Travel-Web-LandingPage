@@ -56,6 +56,7 @@ const Navbar = () => {
         </div>
         <div
           onClick={() => {
+            
             setactive(true);
           }}
         >
@@ -69,8 +70,7 @@ const Navbar = () => {
         </div>
       </nav>
       <div
-        className={`transition-all fixed z-50 flex flex-col gap-5 p-20 pb-24 left-0 right-0 top-0 h-[50vh] w-full bg-green-90 delay-100 ${
-          active ? "translate-y-0" : "translate-y-[-100%]"
+        className={`transition-all fixed z-50 flex flex-col gap-5 p-20 pb-24 left-0 right-0 top-0 h-[50vh] w-full bg-green-90 delay-100 ${active ? "translate-y-0" : "translate-y-[-100%]"
         }`}
       >
         <Image
